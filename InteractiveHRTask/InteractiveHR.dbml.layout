@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="InteractiveHR">
+  <DataContextMoniker Name="/InteractiveHRDataContext" />
+  <nestedChildShapes>
+    <classShape Id="ccf7e5cb-39d0-42e8-a81b-44187c8ed982" absoluteBounds="0.5, 0.625, 2, 1.3862939453125">
+      <DataClassMoniker Name="/InteractiveHRDataContext/Department" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d9116d40-774c-4647-950f-6e1e0a775696" absoluteBounds="0.515, 1.085, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="57a78767-a1ce-4f8d-a8db-da5513832c83" absoluteBounds="0.5, 0.75, 2, 2.5401025390625">
+      <DataClassMoniker Name="/InteractiveHRDataContext/Employee" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e281d188-f127-46e4-a5e8-d7f4b003401c" absoluteBounds="0.515, 1.21, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(1.5 : 0.625); (1.5 : 0.375); (1.5 : 0.375); (1.5 : 0.75)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/InteractiveHRDataContext/Department/Department_Employee" />
+      <nodes>
+        <classShapeMoniker Id="ccf7e5cb-39d0-42e8-a81b-44187c8ed982" />
+        <classShapeMoniker Id="57a78767-a1ce-4f8d-a8db-da5513832c83" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="294f9a3e-a28f-4e24-b8b5-2fb38abda1d2" absoluteBounds="0.5, 0.625, 2, 2.3478011067708335">
+      <DataClassMoniker Name="/InteractiveHRDataContext/Vacation" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2f96ccb4-3c80-4fce-953c-8f5d1332b44b" absoluteBounds="0.515, 1.085, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(0.5 : 2.02005126953125); (0.25 : 2.02005126953125); (0.25 : 1.79890055338542); (0.5 : 1.79890055338542)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/InteractiveHRDataContext/Employee/Employee_Vacation" />
+      <nodes>
+        <classShapeMoniker Id="57a78767-a1ce-4f8d-a8db-da5513832c83" />
+        <classShapeMoniker Id="294f9a3e-a28f-4e24-b8b5-2fb38abda1d2" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="0a97df7d-cc80-4d6c-85d8-bf03f090fb27" absoluteBounds="3.125, 0.5, 2, 1.1939925130208333">
+      <DataClassMoniker Name="/InteractiveHRDataContext/VacationStatus" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f520ad49-1fd3-4cda-8d17-8e07efb37b18" absoluteBounds="3.14, 0.96, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(3.125 : 1.15949625651042); (2.5 : 1.15949625651042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/InteractiveHRDataContext/VacationStatus/VacationStatus_Vacation" />
+      <nodes>
+        <classShapeMoniker Id="0a97df7d-cc80-4d6c-85d8-bf03f090fb27" />
+        <classShapeMoniker Id="294f9a3e-a28f-4e24-b8b5-2fb38abda1d2" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="c68b1dcf-e288-4fde-bc68-17cd9e71124a" absoluteBounds="3.625, 2.25, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/InteractiveHRDataContext/VacationType" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0ed64f52-1358-4478-a740-782e7b7c93b1" absoluteBounds="3.64, 2.71, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(3.625 : 2.61140055338542); (2.5 : 2.61140055338542)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/InteractiveHRDataContext/VacationType/VacationType_Vacation" />
+      <nodes>
+        <classShapeMoniker Id="c68b1dcf-e288-4fde-bc68-17cd9e71124a" />
+        <classShapeMoniker Id="294f9a3e-a28f-4e24-b8b5-2fb38abda1d2" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
